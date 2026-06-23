@@ -6,7 +6,7 @@ function damageBooster()
     gg.clearResults()
     gg.setRanges(gg.REGION_ANONYMOUS)
     local default_HP = 700000
-    local default_ATK = 30000
+    local default_ATK = 60000
     local new_value_HP = default_HP
     local new_value_ATK = default_ATK
 
@@ -280,7 +280,7 @@ gg.clearResults()
     local new_value_HP = default_HP
     local new_value_ATK = default_ATK
 
-    local mode = gg.alert("DAMAGE BOOSTER   ( TOLONG DIBACA ) \n\nNote: Jika Menggunakan Fitur Ini, Team Dan Musuh Harus Bot/Afk. Jika Musuh Dan Team Tidak Bot/Afk, Akan Mengalami Crash/Force Close.\n\n Aktifkan Di Dalam Pertandingan, Tunggu Sampai Script 100% Aktif Agar Tidak Terjadi BUG,", "[OTOMATIS â]", "[MANUAL âï¸]")
+    local mode = gg.alert("DAMAGE BOOSTER   ( TOLONG DIBACA ) \n\nNote: Jika Menggunakan Fitur Ini, Team Dan Musuh Harus Bot/Afk. Jika Musuh Dan Team Tidak Bot/Afk, Akan Mengalami Crash/Force Close.\n\n Aktifkan Di Dalam Pertandingan, Tunggu Sampai Script 100% Aktif Agar Tidak Terjadi BUG,", "[OTOMATIS âœ…]", "[MANUAL âœ ï¸ ]")
     if not mode then return end
 
     -- Pilih Hero
@@ -382,7 +382,7 @@ function damageMage()
     local new_value_HP = default_HP
     local new_value_ATK = default_ATK
 
-    local mode = gg.alert("DAMAGE BOOSTER   ( TOLONG DIBACA ) \n\nNote: Jika Menggunakan Fitur Ini, Team Dan Musuh Harus Bot/Afk. Jika Musuh Dan Team Tidak Bot/Afk, Akan Mengalami Crash/Force Close.\n\n Aktifkan Di Dalam Pertandingan, Tunggu Sampai Script 100% Aktif Agar Tidak Terjadi BUG,", "[OTOMATIS â]", "[MANUAL âï¸]")
+    local mode = gg.alert("DAMAGE BOOSTER   ( TOLONG DIBACA ) \n\nNote: Jika Menggunakan Fitur Ini, Team Dan Musuh Harus Bot/Afk. Jika Musuh Dan Team Tidak Bot/Afk, Akan Mengalami Crash/Force Close.\n\n Aktifkan Di Dalam Pertandingan, Tunggu Sampai Script 100% Aktif Agar Tidak Terjadi BUG,", "[OTOMATIS âœ…]", "[MANUAL âœ ï¸ ]")
     if not mode then return end
 
     -- Pilih Hero
@@ -478,7 +478,7 @@ function damageSupport()
     local new_value_HP = default_HP
     local new_value_ATK = default_ATK
 
-    local mode = gg.alert("DAMAGE BOOSTER   ( TOLONG DIBACA ) \n\nNote: Jika Menggunakan Fitur Ini, Team Dan Musuh Harus Bot/Afk. Jika Musuh Dan Team Tidak Bot/Afk, Akan Mengalami Crash/Force Close.\n\n Aktifkan Di Dalam Pertandingan, Tunggu Sampai Script 100% Aktif Agar Tidak Terjadi BUG,", "[OTOMATIS â]", "[MANUAL âï¸]")
+    local mode = gg.alert("DAMAGE BOOSTER   ( TOLONG DIBACA ) \n\nNote: Jika Menggunakan Fitur Ini, Team Dan Musuh Harus Bot/Afk. Jika Musuh Dan Team Tidak Bot/Afk, Akan Mengalami Crash/Force Close.\n\n Aktifkan Di Dalam Pertandingan, Tunggu Sampai Script 100% Aktif Agar Tidak Terjadi BUG,", "[OTOMATIS âœ…]", "[MANUAL âœ ï¸ ]")
     if not mode then return end
 
     -- Pilih Hero
@@ -551,69 +551,69 @@ end
 function percepatwaktu()
     gg.clearResults()
     gg.setRanges(gg.REGION_ANONYMOUS)
-    local ikiwktue = {"---âª¼ ð 01:00", "---âª¼ ð 02:00", "---âª¼ ð 03:00", "---âª¼ ð 04:00", "---âª¼ ð 05:00", "---âª¼ ð 06:00", "---âª¼ ð 07:00", "---âª¼ ð 08:00", "---âª¼ ð 09:00", "---âª¼ ð 10:00", "---âª¼ ð 11:00", "---âª¼ ð 12:00", "---âª¼ ð 13:00", "---âª¼ ð 14:00", "---âª¼ ð 15:00", "---âª¼ ð 16:00", "---âª¼ ð 17:00", "---âª¼ ð 18:00", "---âª¼ ð 19:00", "---âª¼ ð 20:00", "---âª¼ ð 21:00", "---âª¼ ð 22:00", "---âª¼ ð 23:00", "---âª¼ ð 24:00", "---âª¼ ð 25:00", "---âª¼ ð 26:00", "---âª¼ ð 27:00", "---âª¼ ð 28:00", "---âª¼ ð 29:00", "---âª¼ ð 30:00", "---âª¼ ð 31:00", "---âª¼ ð 32:00", "---âª¼ ð 33:00", "---âª¼ ð 34:00", "---âª¼ ð 35:00", "---âª¼ ð 36:00", "---âª¼ ð 37:00", "---âª¼ ð 38:00", "---âª¼ ð 39:00", "---âª¼ ð 40:00", "---âª¼ ð 41:00", "---âª¼ ð 42:00", "---âª¼ ð 43:00", "---âª¼ ð 44:00", "---âª¼ ð 45:00", "---âª¼ ð 46:00", "---âª¼ ð 47:00", "---âª¼ ð 48:00", "---âª¼ ð 49:00", "---âª¼ ð 50:00", "---âª¼ ð 51:00", "---âª¼ ð 52:00", "---âª¼ ð 53:00", "---âª¼ ð 54:00", "---âª¼ ð 55:00", "---âª¼ ð 56:00", "---âª¼ ð 57:00", "---âª¼ ð 58:00", "---âª¼ ð 59:00", "---âª¼ ð 60:00"
+    local ikiwktue = {"---âª¼ ðŸ•’ 01:00", "---âª¼ ðŸ•’ 02:00", "---âª¼ ðŸ•’ 03:00", "---âª¼ ðŸ•’ 04:00", "---âª¼ ðŸ•’ 05:00", "---âª¼ ðŸ•’ 06:00", "---âª¼ ðŸ•’ 07:00", "---âª¼ ðŸ•’ 08:00", "---âª¼ ðŸ•’ 09:00", "---âª¼ ðŸ•’ 10:00", "---âª¼ ðŸ•’ 11:00", "---âª¼ ðŸ•’ 12:00", "---âª¼ ðŸ•’ 13:00", "---âª¼ ðŸ•’ 14:00", "---âª¼ ðŸ•’ 15:00", "---âª¼ ðŸ•’ 16:00", "---âª¼ ðŸ•’ 17:00", "---âª¼ ðŸ•’ 18:00", "---âª¼ ðŸ•’ 19:00", "---âª¼ ðŸ•’ 20:00", "---âª¼ ðŸ•’ 21:00", "---âª¼ ðŸ•’ 22:00", "---âª¼ ðŸ•’ 23:00", "---âª¼ ðŸ•’ 24:00", "---âª¼ ðŸ•’ 25:00", "---âª¼ ðŸ•’ 26:00", "---âª¼ ðŸ•’ 27:00", "---âª¼ ðŸ•’ 28:00", "---âª¼ ðŸ•’ 29:00", "---âª¼ ðŸ•’ 30:00", "---âª¼ ðŸ•’ 31:00", "---âª¼ ðŸ•’ 32:00", "---âª¼ ðŸ•’ 33:00", "---âª¼ ðŸ•’ 34:00", "---âª¼ ðŸ•’ 35:00", "---âª¼ ðŸ•’ 36:00", "---âª¼ ðŸ•’ 37:00", "---âª¼ ðŸ•’ 38:00", "---âª¼ ðŸ•’ 39:00", "---âª¼ ðŸ•’ 40:00", "---âª¼ ðŸ•’ 41:00", "---âª¼ ðŸ•’ 42:00", "---âª¼ ðŸ•’ 43:00", "---âª¼ ðŸ•’ 44:00", "---âª¼ ðŸ•’ 45:00", "---âª¼ ðŸ•’ 46:00", "---âª¼ ðŸ•’ 47:00", "---âª¼ ðŸ•’ 48:00", "---âª¼ ðŸ•’ 49:00", "---âª¼ ðŸ•’ 50:00", "---âª¼ ðŸ•’ 51:00", "---âª¼ ðŸ•’ 52:00", "---âª¼ ðŸ•’ 53:00", "---âª¼ ðŸ•’ 54:00", "---âª¼ ðŸ•’ 55:00", "---âª¼ ðŸ•’ 56:00", "---âª¼ ðŸ•’ 57:00", "---âª¼ ðŸ•’ 58:00", "---âª¼ ðŸ•’ 59:00", "---âª¼ ðŸ•’ 60:00"
     }
     local dutaTime = {
-["---âª¼ ð 01:00"] = 60000,
-["---âª¼ ð 02:00"] = 120000,
-["---âª¼ ð 03:00"] = 180000,
-["---âª¼ ð 04:00"] = 240000,
-["---âª¼ ð 05:00"] = 300000,
-["---âª¼ ð 06:00"] = 360000,
-["---âª¼ ð 07:00"] = 420000,
-["---âª¼ ð 08:00"] = 480000,
-["---âª¼ ð 09:00"] = 540000,
-["---âª¼ ð 10:00"] = 600000,
-["---âª¼ ð 11:00"] = 660000,
-["---âª¼ ð 12:00"] = 720000,
-["---âª¼ ð 13:00"] = 780000,
-["---âª¼ ð 14:00"] = 840000,
-["---âª¼ ð 15:00"] = 900000,
-["---âª¼ ð 16:00"] = 960000,
-["---âª¼ ð 17:00"] = 1020000,
-["---âª¼ ð 18:00"] = 1080000,
-["---âª¼ ð 19:00"] = 1140000,
-["---âª¼ ð 20:00"] = 1200000,
-["---âª¼ ð 21:00"] = 1260000,
-["---âª¼ ð 22:00"] = 1320000,
-["---âª¼ ð 23:00"] = 1380000,
-["---âª¼ ð 24:00"] = 1440000,
-["---âª¼ ð 25:00"] = 1500000,
-["---âª¼ ð 26:00"] = 1560000,
-["---âª¼ ð 27:00"] = 1620000,
-["---âª¼ ð 28:00"] = 1680000,
-["---âª¼ ð 29:00"] = 1740000,
-["---âª¼ ð 30:00"] = 1800000,
-["---âª¼ ð 31:00"] = 1860000,
-["---âª¼ ð 32:00"] = 1920000,
-["---âª¼ ð 33:00"] = 1980000,
-["---âª¼ ð 34:00"] = 2040000,
-["---âª¼ ð 35:00"] = 2100000,
-["---âª¼ ð 36:00"] = 2160000,
-["---âª¼ ð 37:00"] = 2220000,
-["---âª¼ ð 38:00"] = 2280000,
-["---âª¼ ð 39:00"] = 2340000,
-["---âª¼ ð 40:00"] = 2400000,
-["---âª¼ ð 41:00"] = 2460000,
-["---âª¼ ð 42:00"] = 2520000,
-["---âª¼ ð 43:00"] = 2580000,
-["---âª¼ ð 44:00"] = 2640000,
-["---âª¼ ð 45:00"] = 2700000,
-["---âª¼ ð 46:00"] = 2760000,
-["---âª¼ ð 47:00"] = 2820000,
-["---âª¼ ð 48:00"] = 2880000,
-["---âª¼ ð 49:00"] = 2940000,
-["---âª¼ ð 50:00"] = 3000000,
-["---âª¼ ð 51:00"] = 3060000,
-["---âª¼ ð 52:00"] = 3120000,
-["---âª¼ ð 53:00"] = 3180000,
-["---âª¼ ð 54:00"] = 3240000,
-["---âª¼ ð 55:00"] = 3300000,
-["---âª¼ ð 56:00"] = 3360000,
-["---âª¼ ð 57:00"] = 3420000,
-["---âª¼ ð 58:00"] = 3480000,
-["---âª¼ ð 59:00"] = 3540000,
-["---âª¼ ð 60:00"] = 3600000
+["---âª¼ ðŸ•’ 01:00"] = 60000,
+["---âª¼ ðŸ•’ 02:00"] = 120000,
+["---âª¼ ðŸ•’ 03:00"] = 180000,
+["---âª¼ ðŸ•’ 04:00"] = 240000,
+["---âª¼ ðŸ•’ 05:00"] = 300000,
+["---âª¼ ðŸ•’ 06:00"] = 360000,
+["---âª¼ ðŸ•’ 07:00"] = 420000,
+["---âª¼ ðŸ•’ 08:00"] = 480000,
+["---âª¼ ðŸ•’ 09:00"] = 540000,
+["---âª¼ ðŸ•’ 10:00"] = 600000,
+["---âª¼ ðŸ•’ 11:00"] = 660000,
+["---âª¼ ðŸ•’ 12:00"] = 720000,
+["---âª¼ ðŸ•’ 13:00"] = 780000,
+["---âª¼ ðŸ•’ 14:00"] = 840000,
+["---âª¼ ðŸ•’ 15:00"] = 900000,
+["---âª¼ ðŸ•’ 16:00"] = 960000,
+["---âª¼ ðŸ•’ 17:00"] = 1020000,
+["---âª¼ ðŸ•’ 18:00"] = 1080000,
+["---âª¼ ðŸ•’ 19:00"] = 1140000,
+["---âª¼ ðŸ•’ 20:00"] = 1200000,
+["---âª¼ ðŸ•’ 21:00"] = 1260000,
+["---âª¼ ðŸ•’ 22:00"] = 1320000,
+["---âª¼ ðŸ•’ 23:00"] = 1380000,
+["---âª¼ ðŸ•’ 24:00"] = 1440000,
+["---âª¼ ðŸ•’ 25:00"] = 1500000,
+["---âª¼ ðŸ•’ 26:00"] = 1560000,
+["---âª¼ ðŸ•’ 27:00"] = 1620000,
+["---âª¼ ðŸ•’ 28:00"] = 1680000,
+["---âª¼ ðŸ•’ 29:00"] = 1740000,
+["---âª¼ ðŸ•’ 30:00"] = 1800000,
+["---âª¼ ðŸ•’ 31:00"] = 1860000,
+["---âª¼ ðŸ•’ 32:00"] = 1920000,
+["---âª¼ ðŸ•’ 33:00"] = 1980000,
+["---âª¼ ðŸ•’ 34:00"] = 2040000,
+["---âª¼ ðŸ•’ 35:00"] = 2100000,
+["---âª¼ ðŸ•’ 36:00"] = 2160000,
+["---âª¼ ðŸ•’ 37:00"] = 2220000,
+["---âª¼ ðŸ•’ 38:00"] = 2280000,
+["---âª¼ ðŸ•’ 39:00"] = 2340000,
+["---âª¼ ðŸ•’ 40:00"] = 2400000,
+["---âª¼ ðŸ•’ 41:00"] = 2460000,
+["---âª¼ ðŸ•’ 42:00"] = 2520000,
+["---âª¼ ðŸ•’ 43:00"] = 2580000,
+["---âª¼ ðŸ•’ 44:00"] = 2640000,
+["---âª¼ ðŸ•’ 45:00"] = 2700000,
+["---âª¼ ðŸ•’ 46:00"] = 2760000,
+["---âª¼ ðŸ•’ 47:00"] = 2820000,
+["---âª¼ ðŸ•’ 48:00"] = 2880000,
+["---âª¼ ðŸ•’ 49:00"] = 2940000,
+["---âª¼ ðŸ•’ 50:00"] = 3000000,
+["---âª¼ ðŸ•’ 51:00"] = 3060000,
+["---âª¼ ðŸ•’ 52:00"] = 3120000,
+["---âª¼ ðŸ•’ 53:00"] = 3180000,
+["---âª¼ ðŸ•’ 54:00"] = 3240000,
+["---âª¼ ðŸ•’ 55:00"] = 3300000,
+["---âª¼ ðŸ•’ 56:00"] = 3360000,
+["---âª¼ ðŸ•’ 57:00"] = 3420000,
+["---âª¼ ðŸ•’ 58:00"] = 3480000,
+["---âª¼ ðŸ•’ 59:00"] = 3540000,
+["---âª¼ ðŸ•’ 60:00"] = 3600000
     }
 
     local owalahjembot = gg.choice(ikiwktue, nil, "\nUBAH WAKTU DALAM PERMAINAN")
@@ -659,7 +659,7 @@ function percepatwaktu()
 end
 
 function inicd()
-  menu = gg.alert(" NO COOLDOWN SKILL & SPELL \n\nNote: Jika Menggunakan Fitur Ini, Team Dan Musuh Harus Bot/Afk. Jika Musuh Dan Team Tidak Bot/Afk, Akan Mengalami Crash/Force Close.\n\n Matikan Fitur Anti Cooldown Sebelum End Game Agar Tidak Crash/Force Close Saat Selesai Pertandingan!!!", "[HIDUP â]", "[MATI â]")
+  menu = gg.alert(" NO COOLDOWN SKILL & SPELL \n\nNote: Jika Menggunakan Fitur Ini, Team Dan Musuh Harus Bot/Afk. Jika Musuh Dan Team Tidak Bot/Afk, Akan Mengalami Crash/Force Close.\n\n Matikan Fitur Anti Cooldown Sebelum End Game Agar Tidak Crash/Force Close Saat Selesai Pertandingan!!!", "[HIDUP âœ…]", "[MATI â Œ]")
     if menu == 1 then
     gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
@@ -668,7 +668,7 @@ gg.refineNumber("0", gg.TYPE_DWORD)
 gg.getResults(100)
 gg.editAll("20,000,009", gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast('NO COOLDOWN ENABLE â') 
+gg.toast('NO COOLDOWN ENABLE âœ…') 
 gg.clearResults()
   end
   if menu == 2 then
@@ -680,7 +680,7 @@ gg.refineNumber("20,000,009", gg.TYPE_DWORD)
 gg.getResults(9)
 gg.editAll("0", gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast('NO COOLDOWN DISABLE â') 
+gg.toast('NO COOLDOWN DISABLE â Œ') 
 gg.clearResults()
 end
 end
@@ -703,7 +703,7 @@ function kdainject()
     if not team then return end
 
     -- Pilihan Player
-    local player_name = {'â Player 1', 'â Player 2', 'â Player 3', 'â Player 4', 'â Player 5'}
+    local player_name = {'â™Ÿ Player 1', 'â™Ÿ Player 2', 'â™Ÿ Player 3', 'â™Ÿ Player 4', 'â™Ÿ Player 5'}
     local player_index = gg.choice(player_name, nil, 'KDA INJECT - Pilih Player')
     if not player_index then return end
 
@@ -782,7 +782,7 @@ end
 
 function suntikturet()
 local a = gg.prompt({
-    "---âª¼ Turret Ke-1 ð","---âª¼ Turret Ke-2 ð","---âª¼ Turret Ke-3 ð","---âª¼ Inti Turret ð"
+    "---âª¼ Turret Ke-1 ðŸ’‰","---âª¼ Turret Ke-2 ðŸ’‰","---âª¼ Turret Ke-3 ðŸ’‰","---âª¼ Inti Turret ðŸ’‰"
   }, {
     "4500", "5700", "7300", "7900"
   }, {
@@ -797,32 +797,32 @@ local a = gg.prompt({
     gg.searchNumber("4500", gg.TYPE_DWORD) gg.getResults(200)
   gg.editAll(b, gg.TYPE_DWORD)
   gg.clearResults()
-  gg.toast("ð TURRET KE-1 SUCCESSFUL â")
+  gg.toast("ðŸ’‰ TURRET KE-1 SUCCESSFUL âœ…")
   local bb= a[2] +0 --[Set Health Hero]--
   gg.setRanges(gg.REGION_ANONYMOUS)
   gg.searchNumber("15;5700;7300;7900", gg.TYPE_DWORD)
     gg.searchNumber("5700", gg.TYPE_DWORD) gg.getResults(200)
   gg.editAll(bb, gg.TYPE_DWORD)
   gg.clearResults()
-  gg.toast("ð TURRET KE-2 SUCCESSFUL â")
+  gg.toast("ðŸ’‰ TURRET KE-2 SUCCESSFUL âœ…")
   local cc= a[3] +0 --[Set MovSpeed Hero]--
   gg.setRanges(gg.REGION_ANONYMOUS)
   gg.searchNumber("15;15;7300:7900", gg.TYPE_DWORD)
     gg.searchNumber("7300", gg.TYPE_DWORD) gg.getResults(200)
   gg.editAll(cc, gg.TYPE_DWORD)
   gg.clearResults()
-  gg.toast("ð TURRET KE-3 SUCCESSFUL â")
+  gg.toast("ðŸ’‰ TURRET KE-3 SUCCESSFUL âœ…")
   local dd= a[3] +0 --[Set MovSpeed Hero]--
   gg.setRanges(gg.REGION_ANONYMOUS)
   gg.searchNumber("15;15;15;7900", gg.TYPE_DWORD)
     gg.searchNumber("7900", gg.TYPE_DWORD) gg.getResults(200)
   gg.editAll(dd, gg.TYPE_DWORD)
   gg.clearResults()
-  gg.toast("ð INTI TURRET SUCCESSFUL â")
+  gg.toast("ðŸ’‰ INTI TURRET SUCCESSFUL âœ…")
   end
 
 function inispam()
-  local menu = gg.alert("CHAT / RADIO INGAME NO COOLDOWN", "[HIDUP â]", "[MATI â]")
+  local menu = gg.alert("CHAT / RADIO INGAME NO COOLDOWN", "[HIDUP âœ…]", "[MATI â Œ]")
   if menu == 1 then
   gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
@@ -831,7 +831,7 @@ gg.refineNumber("5000", gg.TYPE_DWORD)
 gg.getResults(3)
 gg.editAll("68", gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast('âSPAM CHAT HIDUPâ') 
+gg.toast('âœ…SPAM CHAT HIDUPâœ…') 
 gg.clearResults()
   end---Free Access By Nand
   if menu == 2 then
@@ -843,13 +843,13 @@ gg.refineNumber("68", gg.TYPE_DWORD)
 gg.getResults(3)
 gg.editAll("5000", gg.TYPE_DWORD)
 gg.clearResults()
-gg.toast('â SPAM CHAT MATI â') 
+gg.toast('â Œ SPAM CHAT MATI â Œ') 
 gg.clearResults()
   end
 end
 
 function drone_4()
-  local menu = gg.alert("DRONE VIEW 1 \n\nMatikan Fitur Drone View Sebelum End Game Agar Tidak Crash/Force Close Saat Selesai Pertandingan!!!", "[HIDUP â]", "[MATI â]")
+  local menu = gg.alert("DRONE VIEW 1 \n\nMatikan Fitur Drone View Sebelum End Game Agar Tidak Crash/Force Close Saat Selesai Pertandingan!!!", "[HIDUP âœ…]", "[MATI â Œ]")
     if menu == 1 then
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
@@ -924,7 +924,7 @@ end
 
   -- drone view by haimiya script --
     function drone_8()
-     local menu = gg.alert("DRONE VIEW 2 \n\nMatikan Fitur Drone View Sebelum End Game Agar Tidak Crash/Force Close Saat Selesai Pertandingan!!!", "[HIDUP â]", "[MATI â]")
+     local menu = gg.alert("DRONE VIEW 2 \n\nMatikan Fitur Drone View Sebelum End Game Agar Tidak Crash/Force Close Saat Selesai Pertandingan!!!", "[HIDUP âœ…]", "[MATI â Œ]")
     if menu == 1 then
     gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
@@ -997,7 +997,7 @@ end
 end
    
    function drone_10()
-   local menu = gg.alert("DRONE VIEW 3 \n\nMatikan Fitur Drone View Sebelum End Game Agar Tidak Crash/Force Close Saat Selesai Pertandingan!!!", "[HIDUP â]", "[MATI â]")
+   local menu = gg.alert("DRONE VIEW 3 \n\nMatikan Fitur Drone View Sebelum End Game Agar Tidak Crash/Force Close Saat Selesai Pertandingan!!!", "[HIDUP âœ…]", "[MATI â Œ]")
     if menu == 1 then
     gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
@@ -1072,7 +1072,7 @@ end
  end
  
     function drone_12()
-    local menu = gg.alert("DRONE VIEW 4 \n\nMatikan Fitur Drone View Sebelum End Game Agar Tidak Crash/Force Close Saat Selesai Pertandingan!!!", "[HIDUP â]", "[MATI â]")
+    local menu = gg.alert("DRONE VIEW 4 \n\nMatikan Fitur Drone View Sebelum End Game Agar Tidak Crash/Force Close Saat Selesai Pertandingan!!!", "[HIDUP âœ…]", "[MATI â Œ]")
     if menu == 1 then 
     gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
@@ -1145,7 +1145,7 @@ end
 end
      
     function drone_14()
-    local menu = gg.alert("DRONE VIEW 5 \n\nMatikan Fitur Drone View Sebelum End Game Agar Tidak Crash/Force Close Saat Selesai Pertandingan!!!", "[HIDUP â]", "[MATI â]")
+    local menu = gg.alert("DRONE VIEW 5 \n\nMatikan Fitur Drone View Sebelum End Game Agar Tidak Crash/Force Close Saat Selesai Pertandingan!!!", "[HIDUP âœ…]", "[MATI â Œ]")
     if menu == 1 then
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
@@ -1217,9 +1217,52 @@ gg.clearResults()
 end 
 end
 
+function instantLaylaBruno()
+    gg.clearResults()
+    local heroChoice = gg.choice({"ðŸŽ¯ Layla", "âš½ Bruno"}, nil, "PILIH HERO INSTANT (700k HP, 60k ATK):")
+    if not heroChoice then return end
+
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    local new_HP = 700000
+    local new_ATK = 60000
+
+    local stats
+    local heroName
+    if heroChoice == 1 then
+        stats = {HP = 2320, ATK = 133, DEF = 17, MDEF = 15, SPD = 250}
+        heroName = "LAYLA"
+    elseif heroChoice == 2 then
+        stats = {HP = 2320, ATK = 145, DEF = 17, MDEF = 15, SPD = 245}
+        heroName = "BRUNO"
+    end
+
+    -- scan HP
+    gg.searchNumber(string.format("%d;%d;%d;%d;%d", stats.HP, stats.ATK, stats.DEF, stats.MDEF, stats.SPD), gg.TYPE_DWORD)
+    gg.refineNumber(stats.HP, gg.TYPE_DWORD)
+    local checkResults = gg.getResults(100)
+    
+    if #checkResults == 0 then
+        gg.alert("Gagal menemukan nilai " .. heroName .. "!\nPastikan kamu mengaktifkan ini DI DALAM pertandingan.")
+        return
+    end
+    
+    gg.editAll(new_HP, gg.TYPE_DWORD)
+    gg.clearResults()
+
+    -- Scan ulang dengan nilai HP yang telah diubah
+    gg.searchNumber(string.format("%d;%d;%d;%d;%d", new_HP, stats.ATK, stats.DEF, stats.MDEF, stats.SPD), gg.TYPE_DWORD)
+    gg.refineNumber(stats.ATK, gg.TYPE_DWORD)
+    gg.getResults(100)
+    gg.editAll(new_ATK, gg.TYPE_DWORD)
+    gg.clearResults()
+
+    gg.toast("CHEAT DAMAGE 60K " .. heroName .. " AKTIF !")
+end
+
 -- damage fitur --
 function citdamage()
   local menu = gg.choice({ 
+    "âš¡ INSTANT LAYLA & BRUNO",
     "MARKSMAN",
     "FIGHTER",    
     "ASSASSIN",
@@ -1228,30 +1271,29 @@ function citdamage()
     "EXIT",
     
     }, {}, os.date('Day: %d - %m - %Y\nHour: %X\n-----------------------------\n         ¸ HAIMIYA SCRIPT MENU  ¸\n-----------------------------'))  
+    
     if menu == 1 then
-        damageBooster()
-         --gg.toast("ð LOCKED")
-        end
+        instantLaylaBruno()
+    end
     if menu == 2 then
-        damageFighter()
-         --gg.toast("ð LOCKED")
-        end
+        damageBooster()
+    end
     if menu == 3 then
-        damageAssassin()
-        --gg.toast("ð LOCKED")
-        end
+        damageFighter()
+    end
     if menu == 4 then
-        damageMage()
-        --gg.toast("ð LOCKED")
-        end
+        damageAssassin()
+    end
     if menu == 5 then
-    damageSupport()
-       --gg.toast("ð LOCKED")
-        end
+        damageMage()
+    end
     if menu == 6 then
+        damageSupport()
+    end
+    if menu == 7 then
         START()
-        end
-    if menu == nill  then
+    end
+    if menu == nil  then
     
   end
   BG = -1
@@ -1309,11 +1351,11 @@ function START()
     if menu == 1 then
         citdamage()
         end
-        --gg.toast("ð LOCKED")
+        --gg.toast("ðŸ”’ LOCKED")
     if menu == 2 then
         droneview()
         end
-        --gg.toast("ð LOCKED")
+        --gg.toast("ðŸ”’ LOCKED")
     if menu == 8 then
         kdainject()
         end
