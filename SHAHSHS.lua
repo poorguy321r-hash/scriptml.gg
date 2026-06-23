@@ -1,5 +1,5 @@
 -- haimiya script --
-gg.alert("\n                       Nari")
+gg.alert("\n                       Nari¸")
 
 -- damage mm 1 hit --
 function damageBooster()
@@ -10,7 +10,7 @@ function damageBooster()
     local new_value_HP = default_HP
     local new_value_ATK = default_ATK
 
-    local mode = gg.alert("DAMAGE BOOSTER   ( TOLONG DIBACA ) \n\nNote: Jika Menggunakan Fitur Ini, Team Dan Musuh Harus Bot/Afk. Jika Musuh Dan Team Tidak Bot/Afk, Akan Mengalami Crash/Force Close.\n\n Aktifkan Di Dalam Pertandingan, Tunggu Sampai Script 100% Aktif Agar Tidak Terjadi BUG,", "[OTOMATIS]", "[MANUAL]")
+    local mode = gg.alert("DAMAGE BOOSTER   ( TOLONG DIBACA ) \n\nNote: Jika Menggunakan Fitur Ini, Team Dan Musuh Harus Bot/Afk. Jika Musuh Dan Team Tidak Bot/Afk, Akan Mengalami Crash/Force Close.\n\n Aktifkan Di Dalam Pertandingan, Tunggu Sampai Script 100% Aktif Agar Tidak Terjadi BUG,", "[OTOMATIS", "MANUAL")
     if not mode then return end
 
     -- Pilih Hero
@@ -35,6 +35,434 @@ function damageBooster()
   DEF = 17, MDEF = 15, SPD = 245},
        [" Ixia"] = {HP = 2260, ATK = 100,
   DEF = 16, MDEF = 15, SPD = 250},
+       [" Edith"] = {HP = 2440, ATK = 110,
+  DEF = 17, MDEF = 15, SPD = 255},
+      [" Roger"] = {HP = 2530, ATK = 128,
+  DEF = 22, MDEF = 15, SPD = 240},
+       [" Obsidia"] = {HP = 2320, ATK = 120,
+  DEF = 17, MDEF = 15, SPD = 240},
+       [" Bruno"] = {HP = 2320, ATK = 145,
+  DEF = 17, MDEF = 15, SPD = 245},
+      [" Beatrix"] = {HP = 2380, ATK = 115,
+  DEF = 18, MDEF = 15, SPD = 245},
+       [" Wanwan"] = {HP = 2320, ATK = 110,
+  DEF = 17, MDEF = 15, SPD = 240},
+      [" Brody"] = {HP = 2260, ATK = 105,
+  DEF = 16, MDEF = 15, SPD = 250},
+     [" Popol & Kupa"] = {HP = 2260, ATK = 100,  DEF = 16, MDEF = 15, SPD = 250},
+       [" Lesley"] = {HP = 2260, ATK = 145,
+  DEF = 15, MDEF = 15, SPD = 240},
+   [" Yi Sun-Shin"] = {HP = 2320, ATK = 110,
+  DEF = 22, MDEF = 10, SPD = 250},
+    }
+
+    local heroList = {}
+    for hero, _ in pairs(heroStats) do
+        table.insert(heroList, hero)
+    end
+    table.sort(heroList)
+
+    local choice = gg.choice(heroList, nil,"PILIH HERO :   (¸ YT : HAIMIYA SCRIPT  ¸)")
+    if not choice then return end
+
+    local selectedHero = heroList[choice]
+    local stats = heroStats[selectedHero]
+
+
+    -- Custom
+    if mode == 2 then
+    local input = gg.prompt(
+        {"Masukkan HP", "Masukkan ATK"},
+        {stats.HP, stats.ATK},
+        {"number", "number"}
+    )
+    if not input then return end
+    new_value_HP = tonumber(input[1]) or stats.HP
+    new_value_ATK = tonumber(input[2]) or stats.ATK
+    else
+        new_value_HP = default_HP
+        new_value_ATK = default_ATK
+    end
+
+    -- scan HP
+    gg.searchNumber(string.format("%d;%d;%d;%d;%d", stats.HP, stats.ATK, stats.DEF, stats.MDEF, stats.SPD), gg.TYPE_DWORD)
+    gg.refineNumber(stats.HP, gg.TYPE_DWORD)
+    gg.getResults(100)
+    gg.editAll(new_value_HP, gg.TYPE_DWORD)
+    gg.clearResults()
+
+    -- Scan ulang dengan nilai HP yang telah diubah
+    gg.searchNumber(string.format("%d;%d;%d;%d;%d", new_value_HP, stats.ATK, stats.DEF, stats.MDEF, stats.SPD), gg.TYPE_DWORD)
+    gg.refineNumber(stats.ATK, gg.TYPE_DWORD)
+    gg.getResults(100)
+    gg.editAll(new_value_ATK, gg.TYPE_DWORD)
+    gg.clearResults()
+
+
+    gg.toast("CHEAT DAMAGE AKTIF !")
+end
+end
+
+-- damage 1 hit fighter --
+function damageFighter()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    local default_HP = 700000
+    local default_ATK = 123465
+    local new_value_HP = default_HP
+    local new_value_ATK = default_ATK
+
+    local mode = gg.alert("DAMAGE BOOSTER   ( TOLONG DIBACA ) \n\nNote: Jika Menggunakan Fitur Ini, Team Dan Musuh Harus Bot/Afk. Jika Musuh Dan Team Tidak Bot/Afk, Akan Mengalami Crash/Force Close.\n\n Aktifkan Di Dalam Pertandingan, Tunggu Sampai Script 100% Aktif Agar Tidak Terjadi BUG,", "[OTOMATIS]", "[MANUAL")
+    if not mode then return end
+
+    -- Pilih Hero
+    if menu == 1 then 
+    local heroStats2 = {
+        [" Alucard"] = {HP = 2443, ATK = 123, DEF = 21, MDEF = 15, SPD = 260},
+        [" Arlot"] = {HP = 2450, ATK = 120, DEF = 21, MDEF = 15, SPD = 260},
+        [" Bane"] = {HP = 2381, ATK = 117, DEF = 23, MDEF = 15, SPD = 260},
+        [" Chou"] = {HP = 2530, ATK = 121, DEF = 23, MDEF = 15, SPD = 260},
+        [" Alpha"] = {HP = 2468, ATK = 121, DEF = 25, MDEF = 15, SPD = 260},
+        [" Ruby"] = {HP = 2331, ATK = 129, DEF = 18, MDEF = 10, SPD = 260},
+       [" Balmond"] = {HP = 2558, ATK = 119, DEF = 25, MDEF = 15, SPD = 260},
+        [" Hilda"] = {HP = 2680, ATK = 123, DEF = 24, MDEF = 15, SPD = 260},
+     [" Lapu-Lapu"] = {HP = 2450, ATK = 119, DEF = 21, MDEF = 15, SPD = 260},
+        [" Sun"] = {HP = 2500, ATK = 114, DEF = 23, MDEF = 15, SPD = 260},
+        [" Roger"] = {HP = 2530, ATK = 128, DEF = 22, MDEF = 15, SPD = 240},
+      [" Gatotkaca"] = {HP = 2520, ATK = 128, DEF = 10, MDEF = 15, SPD = 260},
+      [" Grock"] = {HP = 2819, ATK = 135, DEF = 21, MDEF = 15, SPD = 260},
+      [" Argus"] = {HP = 2450, ATK = 111, DEF = 21, MDEF = 15, SPD = 260},
+      [" Jawhead"] = {HP = 2480, ATK = 119, DEF = 24, MDEF = 15, SPD = 255},
+      [" Martis"] = {HP = 2560, ATK = 128, DEF = 25, MDEF = 15, SPD = 260},
+      [" Kaja"] = {HP = 2431, ATK = 120, DEF = 25, MDEF = 15, SPD = 270},
+      [" Aldous"] = {HP = 2490, ATK = 129, DEF = 21, MDEF = 15, SPD = 260},
+       [" Leomord"] = {HP = 2560, ATK = 126, DEF = 21, MDEF = 15, SPD = 240},
+      [" Minsitthar"] = {HP = 2520, ATK = 121, DEF = 23, MDEF = 15, SPD = 260},
+       [" Badang"] = {HP = 2530, ATK = 111, DEF = 23, MDEF = 15, SPD = 255},
+      [" Guinevere"] = {HP = 2350, ATK = 126, DEF = 18, MDEF = 15, SPD = 260},
+        [" Terizla"] = {HP = 2619, ATK = 129, DEF = 19, MDEF = 15, SPD = 255},
+         [" X.Borg"] = {HP = 917, ATK = 117, DEF = 25, MDEF = 15, SPD = 260},
+        [" Dyrroth"] = {HP = 2580, ATK = 117, DEF = 22, MDEF = 15, SPD = 265},
+        [" Marsha"] = {HP = 2000, ATK = 90, DEF = 15, MDEF = 15, SPD = 250},
+       [" Silvanna"] = {HP = 2650, ATK = 126, DEF = 22, MDEF = 15, SPD = 255},
+      [" Yu Zhong"] = {HP = 2520, ATK = 129, DEF = 21, MDEF = 15, SPD = 245},
+      [" Benedetta"] = {HP = 2410, ATK = 113, DEF = 18, MDEF = 15, SPD = 255},
+      [" Khaleed"] = {HP = 2600, ATK = 109, DEF = 23, MDEF = 15, SPD = 250},
+       [" Barats"] = {HP = 2450, ATK = 135, DEF = 23, MDEF = 15, SPD = 268},
+       [" Paquito"] = {HP = 2620, ATK = 121, DEF = 22, MDEF = 15, SPD = 260},
+       [" Fredrinn"] = {HP = 2600, ATK = 125, DEF = 20, MDEF = 15, SPD = 260},
+        [" Yin"] = {HP = 2400, ATK = 109, DEF = 21, MDEF = 15, SPD = 252},
+        [" Aulus"] = {HP = 2500, ATK = 90, DEF = 20, MDEF = 15, SPD = 250},
+      [" Phoveus"] = {HP = 2650, ATK = 132, DEF = 25, MDEF = 15, SPD = 252},
+       [" Sora"] = {HP = 2800, ATK = 132, DEF = 25, MDEF = 15, SPD = 252},
+        [" Kalea"] = {HP = 2500, ATK = 126, DEF = 18, MDEF = 15, SPD = 260},
+        [" Zilong"] = {HP = 2511, ATK = 123, DEF = 25, MDEF = 15, SPD = 265},
+        [" Suyou"] = {HP = 2390, ATK = 124,
+  DEF = 16, MDEF = 15, SPD = 225},
+       [" Julian"] = {HP = 2700, ATK = 128,
+  DEF = 24, MDEF = 15, SPD = 262},
+       [" Cici"] = {HP = 2431, ATK = 129,
+  DEF = 23, MDEF = 15, SPD = 250},
+       [" Freya"] = {HP = 2550, ATK = 120,
+  DEF = 22, MDEF = 15, SPD = 260},
+       [" Lukas"] = {HP = 2550, ATK = 119,
+  DEF = 21, MDEF = 15, SPD = 260},
+        [" Thamuz"] = {HP = 2580, ATK = 107,
+  DEF = 17, MDEF = 15, SPD = 250},
+    }
+
+    local heroList2 = {}
+    for hero, _ in pairs(heroStats2) do
+        table.insert(heroList2, hero)
+    end
+    table.sort(heroList2)
+
+    local choice = gg.choice(heroList2, nil,"PILIH HERO :   ( ¸ YT : HAIMIYA SCRIPT  ¸)")
+    if not choice then return end
+
+    local selectedHero = heroList2[choice]
+    local stats = heroStats2[selectedHero]
+
+
+    -- Custom
+    if mode == 2 then
+    local input = gg.prompt(
+        {"Masukkan HP", "Masukkan ATK"},
+        {stats.HP, stats.ATK},
+        {"number", "number"}
+    )
+    if not input then return end
+    new_value_HP = tonumber(input[1]) or stats.HP
+    new_value_ATK = tonumber(input[2]) or stats.ATK
+    else
+        new_value_HP = default_HP
+        new_value_ATK = default_ATK
+    end
+
+    -- scan HP
+    gg.searchNumber(string.format("%d;%d;%d;%d;%d", stats.HP, stats.ATK, stats.DEF, stats.MDEF, stats.SPD), gg.TYPE_DWORD)
+    gg.refineNumber(stats.HP, gg.TYPE_DWORD)
+    gg.getResults(100)
+    gg.editAll(new_value_HP, gg.TYPE_DWORD)
+    gg.clearResults()
+
+    -- Scan ulang dengan nilai HP yang telah diubah
+    gg.searchNumber(string.format("%d;%d;%d;%d;%d", new_value_HP, stats.ATK, stats.DEF, stats.MDEF, stats.SPD), gg.TYPE_DWORD)
+    gg.refineNumber(stats.ATK, gg.TYPE_DWORD)
+    gg.getResults(100)
+    gg.editAll(new_value_ATK, gg.TYPE_DWORD)
+    gg.clearResults()
+
+
+    gg.toast("CHEAT DAMAGE AKTIF !")
+end
+end 
+
+function attackspeed()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    local heroes = {
+        {name = " Kalea", scan = "1000;264;0;0;726;0;0"},
+        {name = " Ling", scan = "1000;264;0;0;726;0;0"},
+        {name = " Hayabusa", scan = "240;264;0;0;760;0;0"},
+        {name = " Julian", scan = "100;264;0;0;736;0;0"},
+        {name = " Balmond", scan = "1000;198;0;0;802;0;0"},
+        {name = " Tigreal", scan = "600;330;0;0;736;0;0"},
+        {name = " Argus", scan = "600;330;0;0;670;0;0"},
+        {name = " Dyrroth", scan = "3000;330;0;0;736;0;0"},
+        {name = " Natan", scan = "300;198;0;0;802;0;0"},
+        {name = " Miya", scan = "100;264;0;0;736;0;0"},
+        {name = " Clint", scan = "300;198;0;0;802;0;0"},
+        {name = " Layla", scan = "100;264;0;0;2234;0;0"},
+        {name = " Yi Sun-shin", scan = "300;198;0;0;802;0;0"},
+    }
+    
+    table.sort(heroes, function(a, b) return a.name < b.name end)
+    
+    local heroNames = {}
+    for i, hero in ipairs(heroes) do
+        table.insert(heroNames, hero.name)
+    end
+    
+    local choice = gg.choice(heroNames, nil, "PILIH HERO :   ( ¸ YT : HAIMIYA SCRIPT  ¸)")
+    if not choice then
+        return
+    end
+    
+    local selectedHero = heroes[choice]
+    gg.toast("Scanning " .. selectedHero.name .. "...")
+
+    -- Langkah 1: Scan awal
+    gg.searchNumber(selectedHero.scan, gg.TYPE_DWORD)
+
+    -- Langkah 2: Refine scan dengan menghapus angka 0
+    local refinedScan = selectedHero.scan:gsub(";0", "") -- Hilangkan ";0"
+    gg.refineNumber(refinedScan, gg.TYPE_DWORD)
+
+    -- Langkah 3: Ambil hasil scan dan ubah value menjadi 0
+    local results = gg.getResults(gg.getResultsCount())
+    for i, v in ipairs(results) do
+        v.value = 0
+        v.freeze = false
+    end
+    
+    gg.setValues(results)
+    gg.toast("Attack Speed Active !")
+    gg.clearResults()
+end
+
+-- damage assassin 1 hit --
+function damageAssassin()
+gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    local default_HP = 700000
+    local default_ATK = 123465
+    local new_value_HP = default_HP
+    local new_value_ATK = default_ATK
+
+    local mode = gg.alert("DAMAGE BOOSTER   ( TOLONG DIBACA ) \n\nNote: Jika Menggunakan Fitur Ini, Team Dan Musuh Harus Bot/Afk. Jika Musuh Dan Team Tidak Bot/Afk, Akan Mengalami Crash/Force Close.\n\n Aktifkan Di Dalam Pertandingan, Tunggu Sampai Script 100% Aktif Agar Tidak Terjadi BUG,", "[OTOMATIS âœ…]", "[MANUAL âœ ï¸ ]")
+    if not mode then return end
+
+    -- Pilih Hero
+    if menu == 1 then 
+    local heroStats3 = {
+        [" Alucard"] = {HP = 2443, ATK = 123, DEF = 21, MDEF = 15, SPD = 260},
+        [" Arlot"] = {HP = 2450, ATK = 120, DEF = 21, MDEF = 15, SPD = 260},
+     [" Benedetta"] = {HP = 2410, ATK = 113, DEF = 18, MDEF = 15, SPD = 255},
+        [" Saber"] = {HP = 2440, ATK = 118, DEF = 20, MDEF = 15, SPD = 260},
+        [" Karina"] = {HP = 2474, ATK = 121, DEF = 20, MDEF = 15, SPD = 260},
+        [" Zilong"] = {HP = 2511, ATK = 123, DEF = 25, MDEF = 15, SPD = 265},
+      [" Natalia"] = {HP = 2480, ATK = 121,
+  DEF = 18, MDEF = 15, SPD = 260},
+       [" Ling"] = {HP = 2369, ATK = 125,
+  DEF = 18, MDEF = 15, SPD = 260},
+       [" Hayabusa"] = {HP = 2270, ATK = 117,
+  DEF = 17, MDEF = 15, SPD = 260},
+        [" Fanny"] = {HP = 2267, ATK = 126,
+  DEF = 16, MDEF = 15, SPD = 265},
+        [" Suyou"] = {HP = 2390, ATK = 124,
+  DEF = 16, MDEF = 15, SPD = 225},
+       [" Julian"] = {HP = 2700, ATK = 128,
+  DEF = 24, MDEF = 15, SPD = 262},
+       [" Aamon"] = {HP = 2455, ATK = 115,
+  DEF = 19, MDEF = 15, SPD = 250},
+       [" Mathilda"] = {HP = 2530, ATK = 120,
+  DEF = 22, MDEF = 15, SPD = 252},
+       [" Lesley"] = {HP = 2260, ATK = 145,
+  DEF = 15, MDEF = 15, SPD = 240},
+   [" Yi Sun-Shin"] = {HP = 2320, ATK = 110,
+  DEF = 22, MDEF = 10, SPD = 250},
+       [" Sora"] = {HP = 2800, ATK = 132, DEF = 25, MDEF = 15, SPD = 252},
+       [" Joy"] = {HP = 2519, ATK = 119, DEF = 20, MDEF = 15, SPD = 260},
+       [" Paquito"] = {HP = 2620, ATK = 121, DEF = 22, MDEF = 15, SPD = 260},
+       [" Yin"] = {HP = 2400, ATK = 109, DEF = 21, MDEF = 15, SPD = 252},
+       [" Nolan"] = {HP = 2390, ATK = 124, DEF = 16, MDEF = 15, SPD = 260},
+       [" Kadita"] = {HP = 2440, ATK = 105, DEF = 18, MDEF = 15, SPD = 250},
+       [" Hanzo"] = {HP = 2594, ATK = 108, DEF = 17, MDEF = 15, SPD = 260},
+       [" Selena"] = {HP = 2280, ATK = 110, DEF = 15, MDEF = 15, SPD = 240},
+       [" Gusion"] = {HP = 2419, ATK = 119, DEF = 18, MDEF = 15, SPD = 260},
+       [" Helcurt"] = {HP = 2440, ATK = 121, DEF = 17, MDEF = 15, SPD = 255},
+       [" Harley"] = {HP = 2380, ATK = 114, DEF = 19, MDEF = 15, SPD = 240},
+      [" Lancelot"] = {HP = 2390, ATK = 124, DEF = 16, MDEF = 15, SPD = 260},
+    }
+
+    local heroList3 = {}
+    for hero, _ in pairs(heroStats3) do
+        table.insert(heroList3, hero)
+    end
+    table.sort(heroList3)
+
+    local choice = gg.choice(heroList3, nil,"PILIH HERO :   ( ¸ YT : HAIMIYA SCRIPT  ¸)")
+    if not choice then return end
+
+    local selectedHero = heroList3[choice]
+    local stats = heroStats3[selectedHero]
+
+
+    -- Custom
+    if mode == 2 then
+    local input = gg.prompt(
+        {"Masukkan HP", "Masukkan ATK"},
+        {stats.HP, stats.ATK},
+        {"number", "number"}
+    )
+    if not input then return end
+    new_value_HP = tonumber(input[1]) or stats.HP
+    new_value_ATK = tonumber(input[2]) or stats.ATK
+    else
+        new_value_HP = default_HP
+        new_value_ATK = default_ATK
+    end
+
+    -- scan HP
+    gg.searchNumber(string.format("%d;%d;%d;%d;%d", stats.HP, stats.ATK, stats.DEF, stats.MDEF, stats.SPD), gg.TYPE_DWORD)
+    gg.refineNumber(stats.HP, gg.TYPE_DWORD)
+    gg.getResults(100)
+    gg.editAll(new_value_HP, gg.TYPE_DWORD)
+    gg.clearResults()
+
+    -- Scan ulang dengan nilai HP yang telah diubah
+    gg.searchNumber(string.format("%d;%d;%d;%d;%d", new_value_HP, stats.ATK, stats.DEF, stats.MDEF, stats.SPD), gg.TYPE_DWORD)
+    gg.refineNumber(stats.ATK, gg.TYPE_DWORD)
+    gg.getResults(100)
+    gg.editAll(new_value_ATK, gg.TYPE_DWORD)
+    gg.clearResults()
+
+
+    gg.toast("CHEAT DAMAGE AKTIF !")
+end
+end
+
+-- damage 1 hit mage --
+function damageMage()
+    gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    local default_HP = 700000
+    local default_ATK = 123456
+    local new_value_HP = default_HP
+    local new_value_ATK = default_ATK
+
+    local mode = gg.alert("DAMAGE BOOSTER   ( TOLONG DIBACA ) \n\nNote: Jika Menggunakan Fitur Ini, Team Dan Musuh Harus Bot/Afk. Jika Musuh Dan Team Tidak Bot/Afk, Akan Mengalami Crash/Force Close.\n\n Aktifkan Di Dalam Pertandingan, Tunggu Sampai Script 100% Aktif Agar Tidak Terjadi BUG,", "[OTOMATIS âœ…]", "[MANUAL âœ ï¸ ]")
+    if not mode then return end
+
+    -- Pilih Hero
+    if menu == 1 then 
+    local heroStats4 = {
+        [" Aurora"] = {HP = 2380, ATK = 110, DEF = 17, MDEF = 15, SPD = 250},
+       [" Vexana"] = {HP = 2380, ATK = 112, DEF = 17, MDEF = 15, SPD = 250},
+       [" Odette"] = {HP = 2440, ATK = 105, DEF = 18, MDEF = 15, SPD = 250},
+       [" Nana"] = {HP = 2380, ATK = 115, DEF = 17, MDEF = 15, SPD = 250},
+       [" Vale"] = {HP = 2380, ATK = 115, DEF = 17, MDEF = 15, SPD = 250},
+       [" Gord"] = {HP = 2380, ATK = 110, DEF = 17, MDEF = 15, SPD = 250},
+        [" Alice"] = {HP = 2452, ATK = 114, DEF = 25, MDEF = 15, SPD = 240},
+       [" Bane"] = {HP = 2381, ATK = 117, DEF = 23, MDEF = 15, SPD = 260},
+       [" Eudora"] = {HP = 2440, ATK = 112, DEF = 18, MDEF = 15, SPD = 250},
+       [" Kagura"] = {HP = 2380, ATK = 118, DEF = 17, MDEF = 15, SPD = 240},
+       [" Cyclops"] = {HP = 2440, ATK = 112, DEF = 18, MDEF = 15, SPD = 240},
+       [" Harley"] = {HP = 2380, ATK = 114, DEF = 19, MDEF = 15, SPD = 240},
+       [" Zhask"] = {HP = 2380, ATK = 107, DEF = 17, MDEF = 15, SPD = 250},
+       [" Pharsa"] = {HP = 2320, ATK = 109, DEF = 16, MDEF = 15, SPD = 240},
+       [" Valir"] = {HP = 2380, ATK = 105, DEF = 17, MDEF = 15, SPD = 250},
+       [" Chang'e"] = {HP = 2320, ATK = 115, DEF = 17, MDEF = 15, SPD = 240},
+       [" Selena"] = {HP = 2380, ATK = 110, DEF = 15, MDEF = 15, SPD = 240},
+       [" Lunox"] = {HP = 2440, ATK = 115, DEF = 18, MDEF = 15, SPD = 240},
+       [" Kimmy"] = {HP = 2380, ATK = 100, DEF = 17, MDEF = 15, SPD = 245},
+       [" Harith"] = {HP = 2260, ATK = 115, DEF = 17, MDEF = 15, SPD = 240},
+       [" Faramis"] = {HP = 2500, ATK = 118, DEF = 20, MDEF = 15, SPD = 240},
+    [" Esmeralda"] = {HP = 2464, ATK = 114, DEF = 21, MDEF = 15, SPD = 240},
+       [" Kadita"] = {HP = 2440, ATK = 105, DEF = 18, MDEF = 15, SPD = 250},
+       [" Lylia"] = {HP = 2380, ATK = 113, DEF = 17, MDEF = 15, SPD = 245},
+       [" Cecilion"] = {HP = 2380, ATK = 105, DEF = 17, MDEF = 15, SPD = 250},
+       [" Luo Yi"] = {HP = 2440, ATK = 107, DEF = 18, MDEF = 15, SPD = 250},
+       [" Yve"] = {HP = 2320, ATK = 115, DEF = 16, MDEF = 15, SPD = 245},
+     [" Valentina"] = {HP = 2500, ATK = 115, DEF = 20, MDEF = 15, SPD = 240},
+     [" Xavier"] = {HP = 2380, ATK = 111, DEF = 17, MDEF = 15, SPD = 250},
+     [" Novaria"] = {HP = 2260, ATK = 115, DEF = 15, MDEF = 15, SPD = 240},
+     [" Zhuxin"] = {HP = 2440, ATK = 115, DEF = 18, MDEF = 15, SPD = 245},
+     [" Zetian"] = {HP = 2380, ATK = 95, DEF = 17, MDEF = 15, SPD = 240},
+    }
+
+    local heroList4 = {}
+    for hero, _ in pairs(heroStats4) do
+        table.insert(heroList4, hero)
+    end
+    table.sort(heroList4)
+
+    local choice = gg.choice(heroList4, nil,"PILIH HERO :   ( ¸ YT : HAIMIYA SCRIPT  ¸)")
+    if not choice then return end
+
+    local selectedHero = heroList4[choice]
+    local stats = heroStats4[selectedHero]
+
+
+    -- Custom
+    if mode == 2 then
+    local input = gg.prompt(
+        {"Masukkan HP", "Masukkan ATK"},
+        {stats.HP, stats.ATK},
+        {"number", "number"}
+    )
+    if not input then return end
+    new_value_HP = tonumber(input[1]) or stats.HP
+    new_value_ATK = tonumber(input[2]) or stats.ATK
+    else
+        new_value_HP = default_HP
+        new_value_ATK = default_ATK
+    end
+
+    -- scan HP
+    gg.searchNumber(string.format("%d;%d;%d;%d;%d", stats.HP, stats.ATK, stats.DEF, stats.MDEF, stats.SPD), gg.TYPE_DWORD)
+    gg.refineNumber(stats.HP, gg.TYPE_DWORD)
+    gg.getResults(100)
+    gg.editAll(new_value_HP, gg.TYPE_DWORD)
+    gg.clearResults()
+
+    -- Scan ulang dengan nilai HP yang telah diubah
+    gg.searchNumber(string.format("%d;%d;%d;%d;%d", new_value_HP, stats.ATK, stats.DEF, stats.MDEF, stats.SPD), gg.TYPE_DWORD)
+    gg.refineNumber(stats.ATK, gg.TYPE_DWORD)
+    gg.getResults(100)
+    gg.editAll(new_value_ATK, gg.TYPE_DWORD)
+    gg.clearResults(  DEF = 16, MDEF = 15, SPD = 250},
        [" Edith"] = {HP = 2440, ATK = 110,
   DEF = 17, MDEF = 15, SPD = 255},
       [" Roger"] = {HP = 2530, ATK = 128,
